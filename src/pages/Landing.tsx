@@ -18,6 +18,31 @@ function Landing() {
           Try App
         </button>
       </nav>
+ <div class="ml-embedded" data-form="aYQOAH"></div>
+        {!submitted ? (
+            <div className="flex flex-col sm:flex-row gap-4">
+              <input
+                type="email"
+                placeholder="Enter your email"
+               className="px-6 py-4 rounded-xl border-2 border-gray-200 focus:border-orange-500 outline-none flex-grow text-lg"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+
+              <button  
+                onClick={() => setSubmitted(true)}
+                className="bg-orange-600 text-white px-8 py-4 rounded-xl font-black text-lg hover:shadow-xl transition transform hover:-translate-y-1"
+              >
+                GET EARLY ACCESS nope
+              </button>
+            </div>
+          ) : (
+            <div className="bg-green-100 text-green-700 p-4 rounded-xl font-bold flex items-center gap-2">
+              <Check /> You're on the list! We'll email you when the grease hits the pan.
+            </div>
+          )}
+          <p className="mt-4 text-sm text-gray-400 italic">Coming Summer 2026. No spam, just bacon.</p>
+        </div>
 
       <section className="px-6 py-16 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div>
