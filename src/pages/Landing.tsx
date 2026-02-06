@@ -27,17 +27,17 @@ function Landing() {
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
             The "Untappd" for English Breakfasts. Rate your eggs, hunt for the best black pudding, and find the UK's top-rated greasy spoons.
           </p>
-
-          {!submitted ? (
-            <div className="flex flex-col sm:flex-row gap-4">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="px-6 py-4 rounded-xl border-2 border-gray-200 focus:border-orange-500 outline-none flex-grow text-lg"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <button
+<div class="ml-embedded" data-form="aYQOAH"></div>
+//          {!submitted ? (
+//            <div className="flex flex-col sm:flex-row gap-4">
+//              <input
+//                type="email"
+//                placeholder="Enter your email"
+//               className="px-6 py-4 rounded-xl border-2 border-gray-200 focus:border-orange-500 outline-none flex-grow text-lg"
+//                value={email}
+//                onChange={(e) => setEmail(e.target.value)}
+//              />
+//              <button
                 onClick={() => setSubmitted(true)}
                 className="bg-orange-600 text-white px-8 py-4 rounded-xl font-black text-lg hover:shadow-xl transition transform hover:-translate-y-1"
               >
