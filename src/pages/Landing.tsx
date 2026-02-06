@@ -41,7 +41,7 @@ function Landing() {
                 onClick={() => setSubmitted(true)}
                 className="bg-orange-600 text-white px-8 py-4 rounded-xl font-black text-lg hover:shadow-xl transition transform hover:-translate-y-1"
               >
-                GET EARLY ACCESS
+                GET EARLY ACCESS now
               </button>
             </div>
           ) : (
