@@ -18,7 +18,8 @@ function Landing() {
           Try App
         </button>
       </nav>
-
+<!-- My words
+  -->
       <section className="px-6 py-16 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
