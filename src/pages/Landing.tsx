@@ -27,8 +27,8 @@ function Landing() {
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
             The "Untappd" for English Breakfasts. Rate your eggs, hunt for the best black pudding, and find the UK's top-rated greasy spoons.
           </p>
-
-          {!submitted ? (
+{/* OLD FORM COMMENTED OUT BELOW */}
+          {/* {!submitted ? (
             <div className="flex flex-col sm:flex-row gap-4">
               <input
                 type="email"
@@ -48,10 +48,14 @@ function Landing() {
             <div className="bg-green-100 text-green-700 p-4 rounded-xl font-bold flex items-center gap-2">
               <Check /> You're on the list! We'll email you when the grease hits the pan.
             </div>
-          )}
-          <p className="mt-4 text-sm text-gray-400 italic">Coming Summer 2026. No spam, just bacon.</p>
-        </div>
+          )} 
+          */}
 
+          {/* NEW MAILERLITE FORM GOES HERE */}
+          <div className="ml-embedded" data-form="YOUR_FORM_ID_HERE"></div>
+
+          <p className="mt-4 text-sm text-gray-400 italic">Coming Summer 2026. No spam, just bacon.</p>
+        
         <div className="relative">
           <div className="bg-white p-4 rounded-[3rem] shadow-2xl border-[8px] border-gray-800 w-full max-w-[320px] mx-auto overflow-hidden">
             <div className="bg-orange-50 h-24 flex items-center justify-center">
