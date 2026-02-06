@@ -28,7 +28,7 @@ function Landing() {
             The "Untappd" for English Breakfasts. Rate your eggs, hunt for the best black pudding, and find the UK's top-rated greasy spoons.
           </p>
 <div class="ml-embedded" data-form="aYQOAH"></div>
-<!          {!submitted ? (
+<!--         {!submitted ? (
             <div className="flex flex-col sm:flex-row gap-4">
               <input
                 type="email"
@@ -44,6 +44,7 @@ function Landing() {
               >
                 GET EARLY ACCESS
               </button>
+-->
             </div>
           ) : (
             <div className="bg-green-100 text-green-700 p-4 rounded-xl font-bold flex items-center gap-2">
