@@ -27,7 +27,7 @@ function Landing() {
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
             The "Untappd" for English Breakfasts. Rate your eggs, hunt for the best black pudding, and find the UK's top-rated greasy spoons.
           </p>
-<div class="ml-embedded" data-form="aYQOAH"></div>    
+   
         <div className="relative">
           <div className="bg-white p-4 rounded-[3rem] shadow-2xl border-[8px] border-gray-800 w-full max-w-[320px] mx-auto overflow-hidden">
             <div className="bg-orange-50 h-24 flex items-center justify-center">
