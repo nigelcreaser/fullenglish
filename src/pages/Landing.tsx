@@ -36,20 +36,14 @@ function Landing() {
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
             The "Untappd" for English Breakfasts. Rate your eggs, hunt for the best black pudding, and find the UK's top-rated greasy spoons.
           </p>
+
+          {/* --- THE MAILERLITE FORM REPLACES THE OLD INPUT BOX HERE --- */}
+          <div className="ml-embedded" data-form="aYQOAH"></div>
+          {/* ---------------------------------------------------------- */}
+
+          <p className="mt-4 text-sm text-gray-400 italic">Coming Summer 2026. No spam, just bacon.</p>
+          <p className="mt-4 text-sm text-gray-400 italic">test version 1.1</p>
         </div>
-<div className="ml-form-wrapper mt-8 text-left">
-  <style>{`
-    /* This reaches inside the MailerLite iframe/div to force alignment */
-    .ml-embedded { 
-      text-align: left !important; 
-      margin-left: 0 !important;
-    }
-    .ml-form-embedWrapper { 
-      margin-left: 0 !important; 
-      justify-content: flex-start !important; 
-    }
-  `}</style>
-  <div className="ml-embedded" {...({ 'data-form': 'aYQOAH' } as any)}></div>
 
         {/* The Phone Mockup Graphic */}
         <div className="relative">
