@@ -32,7 +32,7 @@ function Landing() {
           <div className="ml-embedded" data-form="YOUR_FORM_ID_HERE"></div>
 
           <p className="mt-4 text-sm text-gray-400 italic">Coming Summer 2026. No spam, just bacon.</p>
-        
+        </div>
         <div className="relative">
           <div className="bg-white p-4 rounded-[3rem] shadow-2xl border-[8px] border-gray-800 w-full max-w-[320px] mx-auto overflow-hidden">
             <div className="bg-orange-50 h-24 flex items-center justify-center">
