@@ -42,7 +42,7 @@ function Landing() {
           {/* ---------------------------------------------------------- */}
 
           <p className="mt-4 text-sm text-gray-400 italic">Coming Summer 2026. No spam, just bacon.</p>
-          <p className="mt-4 text-sm text-gray-400 italic">test version 1.1</p>
+          <p className="mt-4 text-sm text-gray-400 italic">test version 1.4</p>
         </div>
 
         {/* The Phone Mockup Graphic */}
