@@ -31,6 +31,7 @@ function Landing() {
           {/* NEW MAILERLITE FORM GOES HERE */}
         <div class="ml-embedded" data-form="aYQOAH"></div>
           <p className="mt-4 text-sm text-gray-400 italic">Coming Summer 2026. No spam, just bacon.</p>
+          <p className="mt-4 text-sm text-gray-400 italic">test version 1.0</p>
         </div>
         <div className="relative">
           <div className="bg-white p-4 rounded-[3rem] shadow-2xl border-[8px] border-gray-800 w-full max-w-[320px] mx-auto overflow-hidden">
