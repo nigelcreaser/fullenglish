@@ -1,22 +1,22 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { MapPin, Award, Check, Instagram, Twitter } from 'lucide-react';
-<!-- MailerLite Universal -->
-<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '1908410');
-</script>
-<!-- End MailerLite Universal -->
+
 function Landing() {
-  const [email, setEmail] = useState('');
-  const [submitted, setSubmitted] = useState(false);
   const navigate = useNavigate();
+
+  // This hook ensures MailerLite "scans" the page after React finishes loading
+  useEffect(() => {
+    // @ts-ignore
+    if (window.ml) {
+      // @ts-ignore
+      window.ml('show', 'aYQOAH', true);
+    }
+  }, []);
 
   return (
     <div className="min-h-screen bg-orange-50 font-sans text-gray-900">
+      {/* Navigation */}
       <nav className="flex justify-between items-center p-6 max-w-6xl mx-auto">
         <img src="/gemini_generated_image_3a84pj3a84pj3a84.png" alt="Full English" className="h-16" />
         <button
@@ -27,6 +27,7 @@ function Landing() {
         </button>
       </nav>
 
+      {/* Hero Section */}
       <section className="px-6 py-16 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
@@ -36,11 +37,15 @@ function Landing() {
             The "Untappd" for English Breakfasts. Rate your eggs, hunt for the best black pudding, and find the UK's top-rated greasy spoons.
           </p>
 
-          {/* NEW MAILERLITE FORM GOES HERE */}
-        <div class="ml-embedded" data-form="aYQOAH"></div>
+          {/* --- THE MAILERLITE FORM REPLACES THE OLD INPUT BOX HERE --- */}
+          <div className="ml-embedded" data-form="aYQOAH"></div>
+          {/* ---------------------------------------------------------- */}
+
           <p className="mt-4 text-sm text-gray-400 italic">Coming Summer 2026. No spam, just bacon.</p>
-          <p className="mt-4 text-sm text-gray-400 italic">test version 1.3</p>
+          <p className="mt-4 text-sm text-gray-400 italic">test version 1.1</p>
         </div>
+
+        {/* The Phone Mockup Graphic */}
         <div className="relative">
           <div className="bg-white p-4 rounded-[3rem] shadow-2xl border-[8px] border-gray-800 w-full max-w-[320px] mx-auto overflow-hidden">
             <div className="bg-orange-50 h-24 flex items-center justify-center">
@@ -70,6 +75,7 @@ function Landing() {
         </div>
       </section>
 
+      {/* Features Section */}
       <section className="bg-white py-20 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 text-center">
           <div>
@@ -88,7 +94,7 @@ function Landing() {
           </div>
           <div>
             <div className="bg-orange-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 text-orange-600">
-              <Award size={32} />
+              <MapPin size={32} />
             </div>
             <h3 className="text-xl font-black mb-2 uppercase">Earn Your Badges</h3>
             <p className="text-gray-500">Collect digital badges like 'Greasy Spoon Guru' and 'The Full Monty'.</p>
@@ -96,6 +102,7 @@ function Landing() {
         </div>
       </section>
 
+      {/* Footer */}
       <footer className="py-12 border-t border-orange-100 text-center">
         <div className="flex justify-center gap-6 mb-4">
           <Instagram className="text-orange-600 cursor-pointer" />
