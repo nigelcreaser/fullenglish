@@ -27,69 +27,31 @@ function Landing() {
             The "Untappd" for English Breakfasts. Rate your eggs, hunt for the best black pudding, and find the UK's top-rated greasy spoons.
           </p>
 
-          {/* --- MAILERLITE FORM START --- */}
-          <div id="mlb2-36796662" className="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-36796662">
-            <div className="ml-form-align-left">
-              <div className="ml-form-embedWrapper embedForm">
-                <div className="ml-form-embedBody ml-form-embedBodyHorizontal ml-form-hoverStack">
-                  
-                  <form 
-                    action="https://assets.mailerlite.com/jsonp/1218821/forms/137659424844318621/subscribe" 
-                    method="post" 
-                    target="_blank"
-                  >
-                    <div className="ml-form-formContent horozintalForm">
-                      <div className="ml-form-horizontalRow">
-                        <div className="ml-input-horizontal">
-                          <div className="horizontal-fields">
-                            <div className="ml-field-group ml-field-email ml-validate-required ml-validate-email">
-                              <input 
-                                type="email" 
-                                className="form-control" 
-                                name="fields[email]" 
-                                placeholder="Email" 
-                                autoComplete="email"
-                                spellCheck="false"
-                                required
-                                style={{
-                                  borderRadius: '12px',
-                                  border: '2px solid #fed7aa',
-                                  padding: '12px',
-                                  width: '100%'
-                                }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div className="ml-button-horizontal">
-                          <button 
-                            type="submit" 
-                            className="primary"
-                            style={{
-                              backgroundColor: '#ea580c',
-                              color: 'white',
-                              fontWeight: 'bold',
-                              borderRadius: '12px',
-                              padding: '12px 24px',
-                              width: '100%',
-                              border: 'none',
-                              cursor: 'pointer'
-                            }}
-                          >
-                            Subscribe
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
+          {/* --- MAILERLITE FORM --- */}
+          <div className="max-w-md bg-white p-2 rounded-2xl shadow-sm border border-orange-100">
+            <form 
+              action="https://assets.mailerlite.com/jsonp/1218821/forms/137659424844318621/subscribe" 
+              method="post" 
+              target="_blank"
+              className="flex flex-col sm:flex-row gap-2"
+            >
+              <input 
+                type="email" 
+                name="fields[email]" 
+                placeholder="Enter your email" 
+                required
+                className="flex-1 p-3 rounded-xl border-2 border-orange-50 focus:border-orange-500 outline-none bg-orange-50/50"
+              />
+              <button 
+                type="submit" 
+                className="bg-orange-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-orange-700 transition whitespace-nowrap"
+              >
+                Join Waitlist
+              </button>
+            </form>
           </div>
-          {/* --- MAILERLITE FORM END --- */}
 
           <p className="mt-4 text-sm text-gray-400 italic">Coming Summer 2026. No spam, just bacon.</p>
-          <p className="mt-4 text-sm text-gray-400 italic font-mono text-xs">v1.7-stable</p>
         </div>
 
         {/* The Phone Mockup Graphic */}
@@ -105,4 +67,29 @@ function Landing() {
                   <span className="text-xs font-bold">Heinz Beanz</span>
                   <Check size={14} className="text-orange-600" />
                 </div>
-                <div className="flex justify-between items-center bg-orange-50 p-
+                <div className="flex justify-between items-center bg-orange-50 p-2 rounded-lg border border-orange-200">
+                  <span className="text-xs font-bold">Richmond Sausage</span>
+                  <Check size={14} className="text-orange-600" />
+                </div>
+              </div>
+              <div className="text-center py-2 bg-orange-600 text-white rounded-lg font-bold text-sm">
+                Check In Plate
+              </div>
+            </div>
+          </div>
+          <div className="absolute -top-4 -right-4 md:right-10 bg-yellow-400 p-4 rounded-full shadow-lg rotate-12 flex flex-col items-center">
+            <Award className="text-orange-900" />
+            <span className="text-[10px] font-black uppercase">Top Rated</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="bg-white py-20 px-6">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 text-center">
+          <div>
+            <div className="bg-orange-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 text-orange-600">
+              <MapPin size={32} />
+            </div>
+            <h3 className="text-xl font-black mb-2 uppercase">The Fry-up Finder</h3>
+            <p className="text-gray
