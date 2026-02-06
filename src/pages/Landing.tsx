@@ -50,7 +50,6 @@ function Landing() {
     }
   `}</style>
   <div className="ml-embedded" {...({ 'data-form': 'aYQOAH' } as any)}></div>
-</div>
 
         {/* The Phone Mockup Graphic */}
         <div className="relative">
