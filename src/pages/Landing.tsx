@@ -8,7 +8,7 @@ function Landing() {
   useEffect(() => {
     // 1. Setup the MailerLite Universal Script
     // Replace 'YOUR_ACCOUNT_ID' with the actual ID from your MailerLite snippet
-    const accountId = "YOUR_ACCOUNT_ID"; 
+    const accountId = "1908410"; 
 
     const scriptId = 'mailerlite-universal-script';
     if (!document.getElementById(scriptId)) {
